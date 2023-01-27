@@ -17,6 +17,8 @@ The Loss function is the sum of the negative cosine similarity between the repre
   <img src="https://user-images.githubusercontent.com/91251307/215083087-a5485e3b-ad4b-49af-9c8f-88da472fd76c.png" width="60%"/>
 </div>
 
+$$ \frac{1}{2} $$
+
 ## Pretext Task
 
 The pretext task consists in taking as input two augmentations of the same image and trying to generate embeddings as similar as possible for both augmentations. It is important to pick the correct augmentations in order to learn the correct invariances and obtain better performances in the downstream task.
