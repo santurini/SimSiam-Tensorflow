@@ -14,7 +14,7 @@ The encoder usually is a feature extractor to obtain a compact representation of
 
 The Loss function is the sum of the negative cosine similarity between the representations and the predictions of opposite branches:
 
-$$ Loss = \frac{1}{2} D(p_1, z_2) +  \frac{1}{2} D(p_2, z_1) $$, where
+$$Loss = \frac{1}{2} D(p_1, z_2) +  \frac{1}{2} D(p_2, z_1)$$, where
 
 ## Pretext Task
 
