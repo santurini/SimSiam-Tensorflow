@@ -16,6 +16,24 @@ The Loss function is the sum of the negative cosine similarity between the repre
 
 $$Loss = \frac{1}{2} D(p_1, z_2) +  \frac{1}{2} D(p_2, z_1) \ \ with \ \ D(p, z) = - \frac{p \cdot z}{||p||_2 \cdot ||z||_2}$$
 
+This is the pseudocode of the paper that makes it even cleare:
+```
+# f: backbone + projection mlp
+# h: prediction mlp
+for x in loader: # load a minibatch x with n samples
+   x1, x2 = aug(x), aug(x) # random augmentation
+   z1, z2 = f(x1), f(x2) # projections, n-by-d
+   p1, p2 = h(z1), h(z2) # predictions, n-by-d
+   L = D(p1, z2)/2 + D(p2, z1)/2 # loss
+   L.backward() # back-propagate
+   update(f, h) # SGD update
+def D(p, z): # negative cosine similarity
+   z = z.detach() # stop gradient
+   p = normalize(p, dim=1) # l2-normalize
+   z = normalize(z, dim=1) # l2-normalize
+   return -(p*z).sum(dim=1).mean()
+```
+
 ## Pretext Task
 
 The pretext task consists in taking as input two augmentations of the same image and trying to generate embeddings as similar as possible for both augmentations. It is important to pick the correct augmentations in order to learn the correct invariances and obtain better performances in the downstream task.
