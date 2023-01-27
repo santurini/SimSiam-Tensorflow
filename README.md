@@ -42,7 +42,7 @@ The pretext task consists in taking as input two augmentations of the same image
 
 ## Downstream Task
 
-The downstream task is image classification on the [Intel Image Classification Dataset](https://www.kaggle.com/datasets/puneet6060/intel-image-classification) thta maybe is to simple for assessing the quality of contrastive learning, in the future I will test it on ImageNet.
+The downstream task is image classification on the [Intel Image Classification Dataset](https://www.kaggle.com/datasets/puneet6060/intel-image-classification) that maybe is to simple for assessing the quality of contrastive learning, in the future I will test it on ImageNet.
 
 ## Citations
 ```
