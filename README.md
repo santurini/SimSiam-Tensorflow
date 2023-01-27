@@ -43,10 +43,11 @@ The pretext task consists in taking as input two augmentations of the same image
 The downstream task is image classification on the [Intel Image Classification Dataset](https://www.kaggle.com/datasets/puneet6060/intel-image-classification) thta maybe is to simple for assessing the quality of contrastive learning, in the future I will test it on ImageNet.
 
 ## Citations
-
-<@Article{chen2020simsiam,
+```
+@Article{chen2020simsiam,
   author  = {Xinlei Chen and Kaiming He},
   title   = {Exploring Simple Siamese Representation Learning},
   journal = {arXiv preprint arXiv:2011.10566},
   year    = {2020},
-}>
+}
+```
