@@ -16,7 +16,7 @@ The Loss function is the sum of the negative cosine similarity between the repre
 
 $$Loss = \frac{1}{2} D(p_1, z_2) +  \frac{1}{2} D(p_2, z_1) \ \ with \ \ D(p, z) = - \frac{p \cdot z}{||p||_2 \cdot ||z||_2}$$
 
-This is the pseudocode of the paper that makes it even cleare:
+This is the pseudocode of the paper that makes it even clearer:
 ```
 # f: backbone + projection mlp
 # h: prediction mlp
@@ -42,4 +42,11 @@ The pretext task consists in taking as input two augmentations of the same image
 
 The downstream task is image classification on the [Intel Image Classification Dataset](https://www.kaggle.com/datasets/puneet6060/intel-image-classification) thta maybe is to simple for assessing the quality of contrastive learning, in the future I will test it on ImageNet.
 
+## Citations
 
+<@Article{chen2020simsiam,
+  author  = {Xinlei Chen and Kaiming He},
+  title   = {Exploring Simple Siamese Representation Learning},
+  journal = {arXiv preprint arXiv:2011.10566},
+  year    = {2020},
+}>
