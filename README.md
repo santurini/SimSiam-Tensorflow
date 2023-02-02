@@ -1,7 +1,9 @@
 # SimSiam Tensorflow2.0 Implementation 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)![Kaggle](https://img.shields.io/badge/kaggle_notebook-20BEFF?style=for-the-badge&logo=googlecolab&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)[![Kaggle](https://img.shields.io/badge/kaggle_notebook-20BEFF?style=for-the-badge&logo=googlecolab&logoColor=white)](https://www.kaggle.com/code/santurini/simsiam-contrastive-learning-tensorflow)
 
 Implementation of a Simple Siamese network in order to perform contrastive learning as pretext task and evaluate on an image classification downstream task following the paper: [SimSiam: Exploring Simple Siamese Representation Learning](https://arxiv.org/abs/2011.10566).
+
+P.S.: Click on the Kaggle badge to visit the Kaggle Tutorial Notebook!
 
 ## Architecture
 
